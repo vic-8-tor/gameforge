@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Games</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!-- Nav header and sidebar are added by app.js -->
+    <section class="main-content">
+      <div class="games-grid">
+        <div>
+          <div>
+            <i class="fa-solid fa-gamepad"></i>
+            <h3>All Games</h3>
+          </div>
+        </div>
+
+        <div class="game-grid-container">
+          <div class="rps-card card">
+            <div class="img"></div>
+            <p>Rock Paper Scissors</p>
+            <div>Quick • Strategy</div>
+            <a href="/signin-and-signup-page/signup.html" data-play="/rps_game/rps.html">
+              <button>Play Now</button>
+            </a>
+          </div>
+
+          <div class="snake-card card">
+            <div class="img"></div>
+            <p>Snake</p>
+            <div>Arcade • Survival</div>
+            <a href="/signin-and-signup-page/signup.html" data-play="/snake_game/snake.html">
+              <button>Play Now</button>
+            </a>
+          </div>
+
+          <div class="more-games-card card">
+            <div class="img">???</div>
+            <p>Coming Soon</p>
+            <div>More to explore</div>
+            <button>Coming Soon</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

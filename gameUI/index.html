@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Nav header and sidebar are added by app.js -->
+    <section class="main-content">
+      <!-- Hero Section -->
+      <div class="hero-section">
+        <p>WELCOME TO</p>
+        <h1>Game<span>Forge</span></h1>
+        <p>
+          Play your favourite games, challenge yourself, <br />
+          and have fun!
+        </p>
+        <a href="/signin-and-signup-page/signup.html" data-play="/games.html">
+          <button>Start Playing</button>
+          <i class="fa-solid fa-chevron-right"></i>
+        </a>
+      </div>
+
+      <!-- Game Grid -->
+      <div class="games-grid">
+        <div>
+          <div>
+            <i class="fa-solid fa-fire"></i>
+            <h3>Popular Games</h3>
+          </div>
+          <div>
+            <a href="/games.html">
+              <p>View all</p>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="game-grid-container">
+          <div class="rps-card card">
+            <div class="img"></div>
+            <p>Rock Paper Scissors</p>
+            <div>Quick • Strategy</div>
+            <a href="/signin-and-signup-page/signup.html" data-play="/rps_game/rps.html">
+              <button>Play Now</button>
+            </a>
+          </div>
+
+          <div class="snake-card card">
+            <div class="img"></div>
+            <p>Snake</p>
+            <div>Arcade • Survival</div>
+            <a href="/signin-and-signup-page/signup.html" data-play="/snake_game/snake.html">
+              <button>Play Now</button>
+            </a>
+          </div>
+
+          <div class="more-games-card card">
+            <div class="img">???</div>
+            <p>Coming Soon</p>
+            <div>More to explore</div>
+            <button>Coming Soon</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="why-section">
+        <div>
+          <i class="fa-solid fa-star"></i>
+          Why Play on GameForge?
+        </div>
+        <div class="reasons">
+          <div class="reason">
+            <i class="fa-solid fa-bolt-lightning"></i>
+            <div><p>Fun &amp; Addictive</p>Simple games, endless fun.</div>
+          </div>
+          <div class="reason">
+            <i class="fa-solid fa-globe"></i>
+            <div><p>Play Anywhere</p>On any device, any time.</div>
+          </div>
+          <div class="reason">
+            <i class="fa-solid fa-trophy"></i>
+            <div><p>Track Your Progress</p>Beat your high scores.</div>
+          </div>
+          <div class="reason">
+            <i class="fa-solid fa-users"></i>
+            <div><p>Be Part of a Community</p>Challenge yourself.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

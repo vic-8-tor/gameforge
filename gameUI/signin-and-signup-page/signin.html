@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in | GameForge</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <a href="../index.html">
+      <div class="logo">
+        <i class="fa-solid fa-gamepad logo-icon"></i>
+        <h2>Game<span>Forge</span></h2>
+      </div>
+    </a>
+
+    <p>Your scores are waiting. Log in to keep climbing.</p>
+
+    <form id="loginForm">
+      <input
+        type="email"
+        id="loginEmail"
+        placeholder="Email"
+        autocomplete="email"
+        required
+      />
+
+      <input
+        type="password"
+        id="loginPassword"
+        placeholder="Password"
+        autocomplete="current-password"
+        required
+      />
+
+      <button type="submit">Sign in</button>
+      <p id="loginMessage" role="status"></p>
+    </form>
+
+    <p>
+      Don't have an account?
+      <a href="signup.html">Register</a>
+    </p>
+
+    <script src="signin.js"></script>
+  </body>
+</html>

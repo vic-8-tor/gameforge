@@ -1,0 +1,24 @@
+{
+  "name": "game-forge",
+  "version": "1.0.0",
+  "description": "A Gaming App",
+  "license": "ISC",
+  "author": "Victor",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^18.0.8",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.10.4",
+    "nodemailer": "^10.1.1",
+    "nodemon": "^3.1.14"
+  }
+}

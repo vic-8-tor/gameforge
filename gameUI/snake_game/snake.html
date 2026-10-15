@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body data-protected>
+    <!-- Nav header and sidebar are added by app.js -->
+    <section class="main-content">
+      <div class="game-panel">
+        <h1>Snake</h1>
+        <div class="scoreboard">
+          <div><span id="score">0</span>Score</div>
+          <div><span id="best">0</span>High score</div>
+        </div>
+        <p class="game-message" id="message">Press Start to play</p>
+        <canvas id="board" width="400" height="400"></canvas>
+        <div><button class="primary-btn" id="startBtn">Start</button></div>
+      </div>
+    </section>
+
+    <script src="/app.js"></script>
+    <script src="/snake_game/snake.js"></script>
+  </body>
+</html>

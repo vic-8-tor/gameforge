@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body data-protected>
+    <!-- Nav header and sidebar are added by app.js -->
+    <section class="main-content">
+      <div class="game-panel">
+        <h1>Rock Paper Scissors</h1>
+        <div class="scoreboard">
+          <div><span id="wins">0</span>Wins</div>
+          <div><span id="losses">0</span>Losses</div>
+          <div><span id="best">0</span>Most wins</div>
+        </div>
+        <p class="game-message" id="result">Pick your move</p>
+        <div class="choices">
+          <button class="choice-btn" data-choice="rock">✊<span>Rock</span></button>
+          <button class="choice-btn" data-choice="paper">✋<span>Paper</span></button>
+          <button class="choice-btn" data-choice="scissors">✌️<span>Scissors</span></button>
+        </div>
+        <button class="ghost-btn" id="resetBtn">Reset score</button>
+      </div>
+    </section>
+
+    <script src="/app.js"></script>
+    <script src="/rps_game/rps.js"></script>
+  </body>
+</html>

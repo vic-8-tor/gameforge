@@ -5,7 +5,7 @@ const signupMessage = document.getElementById("signupMessage");
 const verifyMessage = document.getElementById("verifyMessage");
 
 const emailInput = document.getElementById("signUpEmail");
-const API = "https://gameforge-l0nx.onrender.com/";
+const API = "https://gameforge-l0nx.onrender.com";
 
 let pendingEmail = "";
 

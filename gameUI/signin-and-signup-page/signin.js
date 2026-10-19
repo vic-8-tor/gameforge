@@ -1,6 +1,6 @@
 const loginForm = document.getElementById("loginForm");
 const loginMessage = document.getElementById("loginMessage");
-const API = "https://gameforge-l0nx.onrender.com/";
+const API = "https://gameforge-l0nx.onrender.com";
 
 function getReturnUrl() {
   const params = new URLSearchParams(location.search);

@@ -1,4 +1,4 @@
-const API = "https://gameforge-l0nx.onrender.com/"
+const API = "https://gameforge-l0nx.onrender.com"
 const SIGNUP_URL = `/signin-and-signup-page/signup.html`;
 const LOGIN_URL = `/signin-and-signup-page/signin.html`;
 const HOME_URL = `/index.html`;

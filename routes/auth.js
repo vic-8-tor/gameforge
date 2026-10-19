@@ -4,7 +4,7 @@ import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 import User from "../models/User.js";
 import { requireAuth, JWT_SECRET } from "../middleware/requireAuth.js";
-import { sendCode } from "../utils/mailer.js";
+import { sendCode }  from "../Utils/mailer.js";
 
 const router = express.Router();
 

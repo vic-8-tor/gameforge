@@ -1,5 +1,6 @@
 const loginForm = document.getElementById("loginForm");
 const loginMessage = document.getElementById("loginMessage");
+const API = "https://gameforge-l0nx.onrender.com/";
 
 function getReturnUrl() {
   const params = new URLSearchParams(location.search);
@@ -22,7 +23,7 @@ loginForm.addEventListener("submit", async (event) => {
   const password = document.getElementById("loginPassword").value;
 
   try {
-    const response = await fetch("/api/auth/login", {
+    const response = await fetch(`${API}/api/auth/login`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

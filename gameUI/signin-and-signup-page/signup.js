@@ -5,6 +5,7 @@ const signupMessage = document.getElementById("signupMessage");
 const verifyMessage = document.getElementById("verifyMessage");
 
 const emailInput = document.getElementById("signUpEmail");
+const API = "https://gameforge-l0nx.onrender.com/";
 
 let pendingEmail = "";
 
@@ -31,7 +32,7 @@ signupForm.addEventListener("submit", async (event) => {
   const password = document.getElementById("signUpPassword").value;
 
   try {
-    const response = await fetch("/api/auth/signup", {
+    const response = await fetch(`${API}/api/auth/signup`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       credentials: "same-origin",
@@ -65,7 +66,7 @@ verifyForm.addEventListener("submit", async (event) => {
   const code = document.getElementById("verifyCode").value.trim();
 
   try {
-    const response = await fetch("/api/auth/verify", {
+    const response = await fetch(`${API}/api/auth/verify`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       credentials: "same-origin",
@@ -93,7 +94,7 @@ document.getElementById("resendCode").addEventListener("click", async () => {
   verifyMessage.textContent = "Requesting a new code...";
 
   try {
-    const response = await fetch("/api/auth/resend", {
+    const response = await fetch(`${API}/api/auth/resend`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       credentials: "same-origin",

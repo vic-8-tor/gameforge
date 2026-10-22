@@ -4,7 +4,7 @@ import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 import User from "../models/User.js";
 import { requireAuth, JWT_SECRET } from "../middleware/requireAuth.js";
-import { sendCode }  from "../Utils/mailer.js";
+import { sendCode } from "../Utils/mailer.js";
 
 const router = express.Router();
 
@@ -20,9 +20,12 @@ const publicUser = (u) => ({
 
 function giveToken(res, user) {
   const token = jwt.sign({ id: user._id }, JWT_SECRET, { expiresIn: "7d" });
+
   res.cookie("token", token, {
     httpOnly: true,
+    secure: process.env.NODE_ENV === "production",
     sameSite: "lax",
+    path: "/",
     maxAge: 7 * 24 * 60 * 60 * 1000,
   });
 }

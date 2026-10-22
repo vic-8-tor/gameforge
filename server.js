@@ -1,4 +1,5 @@
 import "dotenv/config";
+import cors from "cors";
 import path from "path";
 import mongoose from "mongoose";
 import { fileURLToPath } from "url";
@@ -16,6 +17,18 @@ server.set("trust proxy", 1); // Render sits behind a proxy
 server.use(express.json());
 server.use(cookieParser());
 server.use(express.static(path.join(__dirname, "gameUI")));
+
+server.use(
+  cors({
+    origin: [
+      "http://localhost:8888",
+      "YOUR_FRONTEND_RENDER_URL"
+    ],
+    credentials: true,
+  }),
+);
+
+server.use(express.json());
 
 server.use("/api/auth", authRoutes);
 

@@ -22,13 +22,12 @@ server.use(
   cors({
     origin: [
       "http://localhost:8888",
-      "YOUR_FRONTEND_RENDER_URL"
+      "http://127.0.0.1:5500",
+      "https://gameforge-l0nx.onrender.com/",
     ],
     credentials: true,
   }),
 );
-
-server.use(express.json());
 
 server.use("/api/auth", authRoutes);
 

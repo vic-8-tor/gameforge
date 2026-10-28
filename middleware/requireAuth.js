@@ -1,7 +1,7 @@
 import jwt from "jsonwebtoken";
 import User from "../models/User.js";
 
-export const JWT_SECRET = process.env.JWT_SECRET || "dev-only-secret-change-me";
+export const JWT_SECRET = process.env.JWT_SECRET || "vdueyfgdcf77y84tuidfc";
 
 export async function requireAuth(req, res, next) {
   try {

@@ -11,7 +11,7 @@ const Auth = {
 
   async check() {
     try {
-      const response = await fetch(`/api/auth/me`, {
+      const response = await fetch(`${AUTH_URL}/me`, {
         credentials: "same-origin",
       });
 
@@ -32,7 +32,7 @@ const Auth = {
 
   async logout() {
     try {
-      await fetch(`/api/auth/logout`, {
+      await fetch(`${AUTH_URL}/logout`, {
         method: "POST",
         credentials: "same-origin",
       });
